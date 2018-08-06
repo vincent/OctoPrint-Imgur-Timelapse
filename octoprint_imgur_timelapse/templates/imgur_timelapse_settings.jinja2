@@ -1,0 +1,25 @@
+<h4>Imgur Timelapse Settings</h4>
+
+<p>You must provide an API Token to be able to upload rendered timelapses to Imgur.</p>
+<p>To do this, <a href="https://api.imgur.com/oauth2/addclient" target="_blank">create a Imgur App</a>,
+    select 'OAuth 2 authorization without a callback URL'.</p>
+<p>Once the app is created, paste the Client ID here.</p>
+
+<form class="form-horizontal" onsubmit="return false;">
+    <p>
+        <label for="imgur_timelapse_client_id"><strong>Client ID</strong></label>
+        <input class="input-text input-block-level" type="text" id="imgur_timelapse_client_id" data-bind="value: settings.plugins.imgur_timelapse.client_id"><br>
+        <label for="imgur_timelapse_client_secret"><strong>Client Secret</strong></label>
+        <input class="input-text input-block-level" type="text" id="imgur_timelapse_client_secret" data-bind="value: settings.plugins.imgur_timelapse.client_secret">
+    </p>
+
+    <p>
+        <label for="imgur_timelapse_album"><strong>Album</strong></label>
+        <input class="input-text input-block-level" type="text" id="imgur_timelapse_album" data-bind="value: settings.plugins.imgur_timelapse.album">
+    </p>
+
+    <p>
+        <label for="imgur_timelapse_delete_after_upload"><strong>Delete After Upload?</strong></label>
+        <input class="input-checkbox" type="checkbox" id="imgur_timelapse_delete_after_upload" data-bind="checked: settings.plugins.imgur_timelapse.delete_after_upload">
+    </p>
+</form>
